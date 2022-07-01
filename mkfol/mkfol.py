@@ -3,7 +3,7 @@ from .semester import make_semester_path
 
 
 def mkfol():
-    if len(sys.argv) <= 2:
+    if len(sys.argv) <= 1:
         print("Usage: mkfol.py -h")
         return
 
