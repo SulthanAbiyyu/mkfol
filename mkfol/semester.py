@@ -1,7 +1,8 @@
 import os
 
+
 def make_semester_path(mata_kuliah: str, semester: int):
-    current_path = os.path.dirname(os.path.abspath(__file__))
+    current_path = os.getcwd()
     path = os.path.join(current_path, f"semester {semester}")
     os.mkdir(path)
     mata_kuliahs = mata_kuliah.split(",")
