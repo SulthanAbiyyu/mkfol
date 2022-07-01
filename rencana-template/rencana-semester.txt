@@ -1,0 +1,10 @@
+Semester Template Plan
+
+└──  semester $no
+    └── $mata_kuliah
+        ├── tugas
+        ├── materi
+        ├── quiz
+        ├── UTS
+        ├── UAS
+        └── lain-lain

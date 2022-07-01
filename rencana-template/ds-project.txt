@@ -1,0 +1,18 @@
+DS Project Template Plan
+
+├── data 
+│   ├── raw
+│   └── processed
+├── notebook 
+│   ├── EDA
+│   └── modeling
+├── src
+│   ├── main.py
+│   ├── train.py
+│   ├── dataset.py
+│   ├── feature_engineering.py
+│   └── visualization.py
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+└── README.md
