@@ -8,7 +8,7 @@ Lelah membuat folder-folder yang sama berulang kali
 
 ## Installation
 
-Via git glone
+Via git clone
 
 ```bash
 git clone https://github.com/SulthanAbiyyu/mkfol
@@ -58,6 +58,6 @@ The result will look something like this:
 ## Project Plan
 
 - [x] Semester folder
-- [] Data science / machine learning project folder
+- [ ] Data science / machine learning project folder
 
-Any suggestion for more template folder? please open new issue
+Any suggestion for more template folders? please open a new issue
