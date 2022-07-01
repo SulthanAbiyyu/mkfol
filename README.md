@@ -55,9 +55,36 @@ The result will look something like this:
         └── lain-lain
 ```
 
+**Make DS/ML project folder**
+
+```bash
+mkfol -ds
+```
+The result will look something like this:
+
+```
+├── data 
+│   ├── raw
+│   └── processed
+├── notebook 
+│   ├── EDA
+│   └── modeling
+├── src
+│   ├── main.py
+│   ├── train.py
+│   ├── dataset.py
+│   ├── feature_engineering.py
+│   └── visualization.py
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+└── README.md
+```
+
+
 ## Project Plan
 
 - [x] Semester folder
-- [ ] Data science / machine learning project folder
+- [x] Data science / machine learning project folder
 
 Any suggestion for more template folders? please open a new issue
