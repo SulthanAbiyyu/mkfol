@@ -11,7 +11,7 @@ Lelah membuat folder-folder yang sama berulang kali
 Via git glone
 
 ```bash
-git clone <url>
+git clone https://github.com/SulthanAbiyyu/mkfol
 ```
 
 Via pip
