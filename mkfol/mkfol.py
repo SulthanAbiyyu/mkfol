@@ -16,6 +16,7 @@ def mkfol():
 
             main feature:
             -s / --semester : make semester folder
+            -ds / --datascience / -ml / --machinelearning : make ds_ml folder
             
             usage:
             mkfol -s <semester> <mata kuliah (separate with comma)>
