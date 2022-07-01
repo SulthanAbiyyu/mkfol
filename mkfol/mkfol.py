@@ -1,5 +1,5 @@
 import sys
-from semester import make_semester_path
+from .semester import make_semester_path
 
 
 def mkfol():

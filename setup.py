@@ -1,10 +1,10 @@
 import setuptools
 setuptools.setup(
     name='mkfol',
-    version='0.2',
-    packages=["src"],
+    version='0.5',
+    packages=["mkfol"],
     entry_points={
-        'console_scripts': ['mkfol=src.mkfol:mkfol']
+        'console_scripts': ['mkfol=mkfol.mkfol:mkfol']
     },
     author='Sulthan Abiyyu Hakim',
     author_email="sabiyyuhakim@student.ub.ac.id",
