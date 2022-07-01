@@ -2,7 +2,7 @@ import os
 
 
 def make_ds_ml_path():
-    dirs = ["data", "notebook", "src"]
+    dirs = ["data", "notebooks", "src"]
     current_path = os.getcwd()
 
     for idx, dir in enumerate(dirs):
@@ -21,6 +21,7 @@ def make_ds_ml_path():
             for notebook_dir in notebook_path:
                 path_path = os.path.join(current_current_path, notebook_dir)
                 os.mkdir(path_path)
+                f = open(os.path.join(path_path, ".keep"), "x")
 
         if idx == 2:
             files = ["main.py", "train.py", "dataset.py",
