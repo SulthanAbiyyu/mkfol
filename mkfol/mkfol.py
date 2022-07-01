@@ -4,7 +4,7 @@ from .semester import make_semester_path
 
 def mkfol():
     if len(sys.argv) <= 1:
-        print("Usage: mkfol.py -h")
+        print("Usage: mkfol -h")
         return
 
     if sys.argv[1] == "-h" or sys.argv[1] == "--help":
@@ -18,22 +18,23 @@ def mkfol():
             -s / --semester : make semester folder
             
             usage:
-            mkfol.py -s <semester> <mata kuliah (separate with comma)>
+            mkfol -s <semester> <mata kuliah (separate with comma)>
             """
         )
         return
 
     if sys.argv[1] == "-v" or sys.argv[1] == "--version":
-        print("mkfol.py version 0.1")
+        print("mkfol version 1.0")
         return
 
     if sys.argv[1] == "-s" or sys.argv[1] == "--semester":
         semester = int(sys.argv[2])
         mata_kuliah = sys.argv[3]
         make_semester_path(mata_kuliah, semester)
+        print("semester folder created")
         return
 
-    print("Please enter valid arguments! mkfol.py -h for help")
+    print("Please enter valid arguments! mkfol -h for help")
 
 
 if __name__ == "__main__":
