@@ -1,7 +1,7 @@
 import setuptools
 setuptools.setup(
     name='mkfol',
-    version='1.1',
+    version='1.1.1',
     packages=["mkfol"],
     entry_points={
         'console_scripts': ['mkfol=mkfol.mkfol:mkfol']
