@@ -58,6 +58,6 @@ The result will look something like this:
 ## Project Plan
 
 - [x] Semester folder
-- [ ] Data science / machine learning project folder
+- [x] Data science / machine learning project folder
 
 Any suggestion for more template folders? please open a new issue
