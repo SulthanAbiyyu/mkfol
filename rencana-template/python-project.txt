@@ -1,0 +1,15 @@
+Python template
+
+├── nama-projek
+│   └── __init__.py
+├── docs
+├── tests
+│   └── __init__.py
+├── LICENSE
+├── .gitignore
+├── MANIFEST.in
+├── Makefile
+├── setup.py
+├── .pre-commit-config.yaml
+├── requirements.txt
+└── README.md

@@ -1,0 +1,17 @@
+DS2 Template
+
+├── data
+│   ├── raw
+│   └── processed
+├── notebook 
+│   ├── exploration
+│   └── modeling
+├── src
+│   ├── tuned_hyperparameters -> Isinya JSON hasil hyperparameter tuning
+│   ├── models -> Isinya ngeload model dan fungsi objective optuna
+│   ├── dataset.py -> Class untuk prep dataset
+│   └── train.py -> Buat training. Nanti ada argumen buat study sama pilihan model
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+└── README.md
