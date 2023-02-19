@@ -1,6 +1,7 @@
 import sys
 from .semester import make_semester_path
 from .ds_ml import make_ds_ml_path
+from .ds2 import make_ds2_ml2_path
 
 
 def mkfol():
@@ -41,6 +42,9 @@ def mkfol():
         print("data science or machine learning project folder created")
         return
 
+    if sys.argv[1] == "-ds2" or sys.argv[1] == "--datascience2" or sys.argv[1] == "-ml2" or sys.argv[1] == "--machinelearning2":
+        make_ds2_ml2_path()
+        print("data science 2 or machine learning 2 project folder created")
     print("Please enter valid arguments! mkfol -h for help")
 
 
