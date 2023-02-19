@@ -45,7 +45,9 @@ def mkfol():
     if sys.argv[1] == "-ds2" or sys.argv[1] == "--datascience2" or sys.argv[1] == "-ml2" or sys.argv[1] == "--machinelearning2":
         make_ds2_ml2_path()
         print("data science 2 or machine learning 2 project folder created")
-    print("Please enter valid arguments! mkfol -h for help")
+
+    else:
+        print("Please enter valid arguments! mkfol -h for help")
 
 
 if __name__ == "__main__":
