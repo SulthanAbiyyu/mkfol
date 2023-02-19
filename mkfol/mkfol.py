@@ -2,6 +2,7 @@ import sys
 from .semester import make_semester_path
 from .ds_ml import make_ds_ml_path
 from .ds2 import make_ds2_ml2_path
+from .semester_week import make_mk_weekly_path
 
 
 def mkfol():
@@ -19,9 +20,12 @@ def mkfol():
             main feature:
             -s / --semester : make semester folder
             -ds / --datascience / -ml / --machinelearning : make ds_ml folder
+            -ds2 / --datascience2 / -ml2 / --machinelearning2 : make ds 2 folder
+            -w / --week
             
             usage:
             mkfol -s <semester> <mata kuliah (separate with comma)>
+            mkfol -w <semester> <mata kuliah (separate with comma)> <number of weeks>
             """
         )
         return
@@ -45,7 +49,15 @@ def mkfol():
     if sys.argv[1] == "-ds2" or sys.argv[1] == "--datascience2" or sys.argv[1] == "-ml2" or sys.argv[1] == "--machinelearning2":
         make_ds2_ml2_path()
         print("data science 2 or machine learning 2 project folder created")
-    print("Please enter valid arguments! mkfol -h for help")
+
+    if sys.argv[1] == "-w" or sys.argv[1] == "--week":
+        semester = int(sys.argv[2])
+        mata_kuliah = sys.argv[3]
+        week = int(sys.argv[4])
+        make_mk_weekly_path(mata_kuliah, semester, week)
+
+    else:
+        print("Please enter valid arguments! mkfol -h for help")
 
 
 if __name__ == "__main__":
