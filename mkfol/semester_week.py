@@ -14,6 +14,6 @@ def make_mk_weekly_path(mata_kuliah: str, semester: int, n_weeks: int = 16):
 
         current_current_path = path
         for week in range(n_weeks):
-            content = f"week {week}"
+            content = f"week {week + 1}"
             path_path = os.path.join(current_current_path, content)
             os.mkdir(path_path)
