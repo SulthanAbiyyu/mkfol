@@ -1,31 +1,52 @@
 import sys
-from .semester import make_semester_path
-from .ds_ml import make_ds_ml_path
-from .ds2 import make_ds2_ml2_path
-from .semester_week import make_mk_weekly_path
+from rich.console import Console
+from semester import make_semester_path
+from ds_ml import make_ds_ml_path
+from ds2 import make_ds2_ml2_path
+from semester_week import make_mk_weekly_path
+# import semester
+# import ds_ml
+# import ds2
+# import semester_week
+
+# Console for Rich Console
+console = Console()
 
 
 def mkfol():
     if len(sys.argv) <= 1:
-        print("Usage: mkfol -h")
+        console.print(""" 
+███╗░░░███╗██╗░░██╗███████╗░█████╗░██╗░░░░░
+████╗░████║██║░██╔╝██╔════╝██╔══██╗██║░░░░░
+██╔████╔██║█████═╝░█████╗░░██║░░██║██║░░░░░
+██║╚██╔╝██║██╔═██╗░██╔══╝░░██║░░██║██║░░░░░
+██║░╚═╝░██║██║░╚██╗██║░░░░░╚█████╔╝███████╗
+╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░░░░░╚════╝░╚══════╝                           
+""", style="bold")
+        console.print("Author : Sulthan Abiyyu Hakim", style="bold blue")
+        print("\n")
+        console.print("Type: [bold]'mkfol -h'[/] for more command.")
         return
 
     if sys.argv[1] == "-h" or sys.argv[1] == "--help":
-        print(
+        console.print(
             """
-            misc:
+            [bold green]Command List : [/]
+
+            [bold]misc:[/]
             -h / --help : show this help
             -v / --version : show version
 
-            main feature:
+            [bold]main feature:[/]
             -s / --semester : make semester folder
             -ds / --datascience / -ml / --machinelearning : make ds_ml folder
             -ds2 / --datascience2 / -ml2 / --machinelearning2 : make ds 2 folder
             -w / --week
             
-            usage:
+            [bold]usage:[/]
             mkfol -s <semester> <mata kuliah (separate with comma)>
             mkfol -w <semester> <mata kuliah (separate with comma)> <number of weeks>
+
             """
         )
         return
